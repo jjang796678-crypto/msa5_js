@@ -1,0 +1,40 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 전체 영역 */
+.con{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* 카드 영역 */
+.card_con{
+  display: grid;
+  /* top: 0; */
+  /* left: 0; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr ) );
+  gap: 10px;
+}
+/* 카드 */
+.card {
+  padding: 5px;
+  background-color: #03D8F3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* 카드 이미지 */
+.card_img {
+  background-image: url("../img/ODYSSEY.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-clip: content-box  ; */
+  /* aspect-ratio: 4/6; */
+  padding-top: 150%;
+}
+
